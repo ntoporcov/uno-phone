@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/uno-phone/static/css/main.d1b05096.chunk.css",
+    "main.js": "/uno-phone/static/js/main.05eda43e.chunk.js",
+    "main.js.map": "/uno-phone/static/js/main.05eda43e.chunk.js.map",
+    "runtime-main.js": "/uno-phone/static/js/runtime-main.35dec3bd.js",
+    "runtime-main.js.map": "/uno-phone/static/js/runtime-main.35dec3bd.js.map",
+    "static/js/2.d5cbbc32.chunk.js": "/uno-phone/static/js/2.d5cbbc32.chunk.js",
+    "static/js/2.d5cbbc32.chunk.js.map": "/uno-phone/static/js/2.d5cbbc32.chunk.js.map",
+    "index.html": "/uno-phone/index.html",
+    "precache-manifest.ebd9bb6c430fea90d015ad38257e82a6.js": "/uno-phone/precache-manifest.ebd9bb6c430fea90d015ad38257e82a6.js",
+    "service-worker.js": "/uno-phone/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/uno-phone/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.d5cbbc32.chunk.js.LICENSE": "/uno-phone/static/js/2.d5cbbc32.chunk.js.LICENSE",
+    "static/media/logo.svg": "/uno-phone/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35dec3bd.js",
+    "static/js/2.d5cbbc32.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.05eda43e.chunk.js"
+  ]
+}
