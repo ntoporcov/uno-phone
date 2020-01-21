@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  background-color: #008aac;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 100px ;
+}
+
+h1{
+  margin-bottom: 0;
 }
 
 .App-logo {
@@ -13,17 +25,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +36,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.inputRow{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.oneNumberInput,.oneNumberInput:focus{
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  width: 70px;
+  height: 80px;
+  margin:0 7px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.2);
+  border: none;
+  outline: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently*/
+}
+
+.oneNumberInput:nth-child(4),.oneNumberInput:nth-child(7){
+  margin-left: 50px;
+}
+
+.oneNumberInput.focus{
+  box-shadow: 0 0 10px rgb(0, 255, 194);
 }
