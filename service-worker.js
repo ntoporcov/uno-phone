@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/uno-phone/precache-manifest.cd09255c22cf739952eb975b5427f07f.js"
+  "/uno-phone/precache-manifest.980d976fdccab045171019981c4563eb.js"
 );
 
 self.addEventListener('message', (event) => {

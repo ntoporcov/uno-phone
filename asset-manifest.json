@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/uno-phone/static/css/main.d1b05096.chunk.css",
-    "main.js": "/uno-phone/static/js/main.22e44fc6.chunk.js",
-    "main.js.map": "/uno-phone/static/js/main.22e44fc6.chunk.js.map",
+    "main.css": "/uno-phone/static/css/main.ec57dfac.chunk.css",
+    "main.js": "/uno-phone/static/js/main.02f82fde.chunk.js",
+    "main.js.map": "/uno-phone/static/js/main.02f82fde.chunk.js.map",
     "runtime-main.js": "/uno-phone/static/js/runtime-main.35dec3bd.js",
     "runtime-main.js.map": "/uno-phone/static/js/runtime-main.35dec3bd.js.map",
-    "static/js/2.d5cbbc32.chunk.js": "/uno-phone/static/js/2.d5cbbc32.chunk.js",
-    "static/js/2.d5cbbc32.chunk.js.map": "/uno-phone/static/js/2.d5cbbc32.chunk.js.map",
+    "static/js/2.472789d1.chunk.js": "/uno-phone/static/js/2.472789d1.chunk.js",
+    "static/js/2.472789d1.chunk.js.map": "/uno-phone/static/js/2.472789d1.chunk.js.map",
     "index.html": "/uno-phone/index.html",
-    "precache-manifest.cd09255c22cf739952eb975b5427f07f.js": "/uno-phone/precache-manifest.cd09255c22cf739952eb975b5427f07f.js",
+    "precache-manifest.980d976fdccab045171019981c4563eb.js": "/uno-phone/precache-manifest.980d976fdccab045171019981c4563eb.js",
     "service-worker.js": "/uno-phone/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/uno-phone/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.d5cbbc32.chunk.js.LICENSE": "/uno-phone/static/js/2.d5cbbc32.chunk.js.LICENSE",
-    "static/media/logo.svg": "/uno-phone/static/media/logo.5d5d9eef.svg"
+    "static/css/main.ec57dfac.chunk.css.map": "/uno-phone/static/css/main.ec57dfac.chunk.css.map",
+    "static/js/2.472789d1.chunk.js.LICENSE": "/uno-phone/static/js/2.472789d1.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.35dec3bd.js",
-    "static/js/2.d5cbbc32.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.22e44fc6.chunk.js"
+    "static/js/2.472789d1.chunk.js",
+    "static/css/main.ec57dfac.chunk.css",
+    "static/js/main.02f82fde.chunk.js"
   ]
 }
