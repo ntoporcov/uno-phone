@@ -1,4 +1,4 @@
-const colors = ['green','red','blue','yellow'];
+const colors = ['#00AA00','#FF5555','#5555FF','#FFAA00'];
 const extraCards = ['cardChangeColor','cardWild4'];
 let deck = [];
 
