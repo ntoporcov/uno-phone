@@ -1,22 +1,7 @@
 import React from 'react';
 import './App.css';
-import deck from "./deck";
-// const card = require.context('../public/cards', true);
-import {ReactComponent as Card0} from "./cards/card0.svg";
-import {ReactComponent as Card1} from "./cards/card1.svg";
-import {ReactComponent as Card2} from "./cards/card2.svg";
-import {ReactComponent as Card3} from "./cards/card3.svg";
-import {ReactComponent as Card4} from "./cards/card4.svg";
-import {ReactComponent as Card5} from "./cards/card5.svg";
-import {ReactComponent as Card6} from "./cards/card6.svg";
-import {ReactComponent as Card7} from "./cards/card7.svg";
-import {ReactComponent as Card8} from "./cards/card8.svg";
-import {ReactComponent as Card9} from "./cards/card9.svg";
-import {ReactComponent as CardBlock} from "./cards/cardBlock.svg";
-import {ReactComponent as CardReverse} from "./cards/cardReverse.svg";
-import {ReactComponent as CardWild2} from "./cards/cardWild2.svg";
-import {ReactComponent as CardChangeColor} from "./cards/cardChangeColor.svg";
-import {ReactComponent as CardWild4} from "./cards/cardWild4.svg";
+import deck from "./cards/deck";
+import Card from "./cards/card";
 
 function randomCard(){
     for (let i = deck.length - 1; i > 0; i--) {
@@ -25,8 +10,10 @@ function randomCard(){
     }
     const randomCard = deck.shift();
     return (
-            <Card0 style={{fill:randomCard.color}}/>
-        )
+        <div className={"card"} role={"button"}>
+            <Card id={randomCard.id} color={randomCard.color}/>
+        </div>
+)
 }
 
 class NumberInput extends React.Component{
@@ -58,6 +45,10 @@ class UnoInput extends React.Component{
                     {numbersArray.map((number,key) => <NumberInput key={key} number={number} focus={ key===this.state.numbers.indexOf(null)} past={this.state.numbers.indexOf(null)>key}/>)}
                 </div>
                 <div className={"cardsRow"}>
+                    {randomCard()}
+                    {randomCard()}
+                    {randomCard()}
+                    {randomCard()}
                     {randomCard()}
                 </div>
             </div>
