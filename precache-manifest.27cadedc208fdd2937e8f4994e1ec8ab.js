@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "335369a5379087513ef856d9dab12a4f",
+    "revision": "6f5b0dabc3017b8bdb91b8d2c717e308",
     "url": "/uno-phone/index.html"
   },
   {
-    "revision": "8080bb7f93143d9f8372",
+    "revision": "30dcd745a7aa4df3d018",
     "url": "/uno-phone/static/css/main.6d45cfda.chunk.css"
   },
   {
-    "revision": "3bd73509f875508f123a",
-    "url": "/uno-phone/static/js/2.80a03a17.chunk.js"
+    "revision": "56dbf3bc4b233bab811a",
+    "url": "/uno-phone/static/js/2.99106b6d.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/uno-phone/static/js/2.80a03a17.chunk.js.LICENSE"
+    "url": "/uno-phone/static/js/2.99106b6d.chunk.js.LICENSE"
   },
   {
-    "revision": "8080bb7f93143d9f8372",
-    "url": "/uno-phone/static/js/main.c67de291.chunk.js"
+    "revision": "30dcd745a7aa4df3d018",
+    "url": "/uno-phone/static/js/main.bbac4775.chunk.js"
   },
   {
     "revision": "091d026a2d31c986d4d2",
