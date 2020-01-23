@@ -85,7 +85,6 @@ class UnoInput extends React.Component{
     }
 
     cardClick = (card,key) => {
-        console.log('ran',card);
         const _this = this;
         const numbers = this.state.numbers;
         const currentIndex = this.state.numbers.indexOf(null);
@@ -143,7 +142,6 @@ class UnoInput extends React.Component{
         }
 
         function addRandom(howMany,color){
-            console.log(currentIndex);
             const newNumbers = numbers;
             for(let i=currentIndex;i<=currentIndex + howMany - 1;i++){
                 if(i <= 9){
