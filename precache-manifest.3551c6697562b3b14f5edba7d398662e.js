@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c155da206ce4e1fa0e35d867c4ab3576",
+    "revision": "4ffd8a593d3f8be390cdf059fb888538",
     "url": "/uno-phone/index.html"
   },
   {
