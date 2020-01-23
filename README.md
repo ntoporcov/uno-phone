@@ -1,4 +1,4 @@
-#Phone Number Entry With UNO
+# Phone Number Entry With UNO
 
 ## What is this?
 
@@ -13,5 +13,3 @@ I was inspired by the minds at https://reddit.com/r/badUIbattles to think what's
 
 ## So is this a game?
 I suppose so, but in the countless times I "played" it while developing, I wasn't able to win it.
-
-
