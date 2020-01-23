@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e57fc07297b945832b697b1222f3cac",
+    "revision": "c09f1a1440d32bea23a87fd971a399c9",
     "url": "/uno-phone/index.html"
   },
   {
-    "revision": "54fbbb38a9bc77be9887",
+    "revision": "e7efe23b49c1012f34d4",
     "url": "/uno-phone/static/css/main.6d45cfda.chunk.css"
   },
   {
-    "revision": "f82b7db304a9c2f1a147",
-    "url": "/uno-phone/static/js/2.4d4bc1ef.chunk.js"
+    "revision": "3bd73509f875508f123a",
+    "url": "/uno-phone/static/js/2.80a03a17.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/uno-phone/static/js/2.4d4bc1ef.chunk.js.LICENSE"
+    "url": "/uno-phone/static/js/2.80a03a17.chunk.js.LICENSE"
   },
   {
-    "revision": "54fbbb38a9bc77be9887",
-    "url": "/uno-phone/static/js/main.a23e6065.chunk.js"
+    "revision": "e7efe23b49c1012f34d4",
+    "url": "/uno-phone/static/js/main.6bd62d2c.chunk.js"
   },
   {
-    "revision": "9a8926ebd4a7671cac83",
-    "url": "/uno-phone/static/js/runtime-main.82bad092.js"
+    "revision": "091d026a2d31c986d4d2",
+    "url": "/uno-phone/static/js/runtime-main.35dec3bd.js"
   },
   {
     "revision": "cc7eaaeec66811edbbddf7937b0bdc63",
