@@ -11,6 +11,7 @@ function App() {
             <title>Phone Entry By Uno</title>
             <meta name="description" content="Enter your phone number by playing Uno" />
             <meta property="og:title" content="Phone Entry By Uno" />
+            <meta property="og:description" content="Enter your phone number by playing Uno" />
         </MetaTags>
       <UnoInput/>
     </div>
