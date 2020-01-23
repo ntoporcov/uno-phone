@@ -127,7 +127,7 @@ class UnoInput extends React.Component{
                 errorMessage:null
             },() => delayAddCard());
 
-            if(currentIndex === 9){
+            if(currentIndex === 9 && changeTo!==null){
                 endGame();
                 return false;
             }
