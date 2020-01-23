@@ -8,6 +8,7 @@ import cardChangeColor from "./cards/public_cardChangeColor.svg"
 import cardReverse from "./cards/public_cardReverse.svg"
 import cardWild2 from "./cards/public_cardWild2.svg"
 import cardWild4 from "./cards/public_cardWild4.svg"
+import Confetti from 'react-confetti'
 
 
 class RandomCard extends React.Component{
@@ -57,7 +58,8 @@ class UnoInput extends React.Component{
             cardTurn:{},
             handAmount:0,
             hand:[],
-            errorMessage:null
+            errorMessage:null,
+            done:false
         }
     }
 
@@ -124,7 +126,12 @@ class UnoInput extends React.Component{
                 hand:hand,
                 currentCard:card,
                 errorMessage:null
-            },() => delayAddCard())
+            },() => delayAddCard());
+
+            if(currentIndex === 9){
+                endGame();
+                return false;
+            }
         }
 
         function removeCard() {
@@ -136,14 +143,30 @@ class UnoInput extends React.Component{
         }
 
         function addRandom(howMany,color){
+            console.log(currentIndex);
             const newNumbers = numbers;
-            let indexToAdd = currentIndex;
-
-            for(let i=currentIndex;i<=(currentIndex + howMany - 1);i++){
-                newNumbers[indexToAdd] = Math.floor(Math.random() * Math.floor(9));
-                indexToAdd++;
+            for(let i=currentIndex;i<=currentIndex + howMany - 1;i++){
+                if(i <= 9){
+                    newNumbers[i] = Math.floor(Math.random() * Math.floor(9));
+                    if(i === 9){
+                        endGame();
+                        return false;
+                    }
+                }else{
+                    endGame();
+                    return false;
+                }
             }
             _this.setState({numbers:newNumbers,currentColor:color,currentCard:card,errorMessage:null},() => delayAddCard());
+        }
+
+        function endGame() {
+            _this.setState({
+                hand:[],
+                deck:[],
+                currentColor: null,
+                done:true,
+            });
         }
 
         //check if card can be played
@@ -178,12 +201,7 @@ class UnoInput extends React.Component{
             //if it can't, tell user why
         }else{
             let errorMessage="";
-            if(card.color !== currentColor){
-                errorMessage+='   ! Wrong Color'
-            }
-            if(card.id !== currentColor){
-                errorMessage+='   ! Wrong Card Match'
-            }
+            errorMessage+=' Wrong Color & Card';
 
             this.setState({errorMessage:errorMessage})
         }
@@ -201,6 +219,7 @@ class UnoInput extends React.Component{
         const numbersArray = this.state.numbers;
         const hand = this.state.hand;
         const color = this.state.currentColor;
+        const done = this.state.done;
         return (
             <div>
                 <h1>Enter Your Phone Number</h1>
@@ -211,47 +230,56 @@ class UnoInput extends React.Component{
                     </div>
                 </div>
                 <div className={"colors"}>
-                    <div className={color==='#FF5555'?"colorBox active":"colorBox"} style={{backgroundColor:'#FF5555'}}/>
-                    <div className={color==='#00AA00'?"colorBox active":"colorBox"} style={{backgroundColor:'#00AA00'}}/>
-                    <div className={color==='#5555FF'?"colorBox active":"colorBox"} style={{backgroundColor:'#5555FF'}}/>
-                    <div className={color==='#FFAA00'?"colorBox active":"colorBox"} style={{backgroundColor:'#FFAA00'}}/>
+                    <div className={color==='#FF5555'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#FF5555'}}/>
+                    <div className={color==='#00AA00'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#00AA00'}}/>
+                    <div className={color==='#5555FF'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#5555FF'}}/>
+                    <div className={color==='#FFAA00'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#FFAA00'}}/>
                 </div>
-                <div style={{fontSize:18,marginBottom:10}}>
-                    <span>{this.state.errorMessage}</span>
+                <div style={{display:done?"none":"block"}}>
+                    <div style={{fontSize:18,marginBottom:10}}>
+                        <span>{this.state.errorMessage}</span>
+                    </div>
+                    <div className={"cardsRow"}>
+                        {hand.map((card,key) => <RandomCard key={key} id={card.id} color={card.color} callback={()=>this.cardClick(card,key)}/>)}
+                    </div>
+                    <div style={{fontSize:18,marginBottom:10}}>
+                        <span>Cards Left On Deck: {this.state.deck.length}</span>
+                    </div>
+                    <button onClick={()=>this.resetHand()}>Discard Hand</button>
+                    <p style={{fontSize:16,lineHeight:0,marginBottom:75}}>Your phone isn't sent anywhere, it's just a game</p>
+                    <div className={"instructionCol"}>
+                        <Instruction
+                            image={card0} title={"Cards 0 to 9"}
+                            description={"Adds the corresponding number to the phone number. Abides by and sets current color."}
+                        />
+                        <Instruction
+                            image={cardReverse} title={"Reverses Card"}
+                            description={"Resets previous number added to the phone number. Abides by and sets current color."}
+                        />
+                        <Instruction
+                            image={cardBlock} title={"Block Card"}
+                            description={"Removes card from current hand. Abides by and sets current color."}
+                        />
+                        <Instruction
+                            image={cardWild2} title={"2 Wild Cards"}
+                            description={"Adds 2 random numbers to Phone Number. Abides by and sets current color."}
+                        />
+                        <Instruction
+                            image={cardWild4} title={"4 Wild Cards"}
+                            description={"Adds 4 random numbers to Phone Number. Resets current color."}
+                        />
+                        <Instruction
+                            image={cardChangeColor} title={"Change Color Card"}
+                            description={"Resets current color."}
+                        />
+                    </div>
                 </div>
-                <div className={"cardsRow"}>
-                    {hand.map((card,key) => <RandomCard key={key} id={card.id} color={card.color} callback={()=>this.cardClick(card,key)}/>)}
-                </div>
-                <div style={{fontSize:18,marginBottom:10}}>
-                    <span>Cards Left On Deck: {this.state.deck.length}</span>
-                </div>
-                <button onClick={()=>this.resetHand()}>Discard Hand</button>
-                <p style={{fontSize:16,lineHeight:0,marginBottom:75}}>Your phone isn't sent anywhere, it's just a game</p>
-                <div className={"instructionCol"}>
-                    <Instruction
-                        image={card0} title={"Cards 0 to 9"}
-                        description={"Adds the corresponding number to the phone number. Abides by and sets current color."}
-                    />
-                    <Instruction
-                        image={cardReverse} title={"Reverses Card"}
-                        description={"Resets previous number added to the phone number. Abides by and sets current color."}
-                    />
-                    <Instruction
-                        image={cardBlock} title={"Block Card"}
-                        description={"Removes card from current hand. Abides by and sets current color."}
-                    />
-                    <Instruction
-                        image={cardWild2} title={"2 Wild Cards"}
-                        description={"Adds 2 random numbers to Phone Number. Abides by and sets current color."}
-                    />
-                    <Instruction
-                        image={cardWild4} title={"4 Wild Cards"}
-                        description={"Adds 4 random numbers to Phone Number. Resets current color."}
-                    />
-                    <Instruction
-                        image={cardChangeColor} title={"Change Color Card"}
-                        description={"Resets current color."}
-                    />
+                <div style={{display:done?"block":"none"}}>
+                    {done?<Confetti width={window.innerWidth} height={window.innerHeight}/>:null}
+                    <h1>Congratulations, you persistent bastard!</h1>
+                    <p style={{marginBottom:0}}>Is this really your phone number?</p>
+                    <h2 style={{marginTop:10}}>I don't fucking care!</h2>
+                    <h3>But you did it! You played along and you deserve some confetti.</h3>
                 </div>
             </div>
         )
