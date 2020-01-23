@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/uno-phone/static/css/main.6d45cfda.chunk.css",
-    "main.js": "/uno-phone/static/js/main.bf694c00.chunk.js",
-    "main.js.map": "/uno-phone/static/js/main.bf694c00.chunk.js.map",
+    "main.css": "/uno-phone/static/css/main.27451259.chunk.css",
+    "main.js": "/uno-phone/static/js/main.3f47c95f.chunk.js",
+    "main.js.map": "/uno-phone/static/js/main.3f47c95f.chunk.js.map",
     "runtime-main.js": "/uno-phone/static/js/runtime-main.35dec3bd.js",
     "runtime-main.js.map": "/uno-phone/static/js/runtime-main.35dec3bd.js.map",
     "static/js/2.99106b6d.chunk.js": "/uno-phone/static/js/2.99106b6d.chunk.js",
     "static/js/2.99106b6d.chunk.js.map": "/uno-phone/static/js/2.99106b6d.chunk.js.map",
     "index.html": "/uno-phone/index.html",
-    "precache-manifest.3551c6697562b3b14f5edba7d398662e.js": "/uno-phone/precache-manifest.3551c6697562b3b14f5edba7d398662e.js",
+    "precache-manifest.8da64fc50cac23b4cb108637788e54fe.js": "/uno-phone/precache-manifest.8da64fc50cac23b4cb108637788e54fe.js",
     "service-worker.js": "/uno-phone/service-worker.js",
-    "static/css/main.6d45cfda.chunk.css.map": "/uno-phone/static/css/main.6d45cfda.chunk.css.map",
+    "static/css/main.27451259.chunk.css.map": "/uno-phone/static/css/main.27451259.chunk.css.map",
     "static/js/2.99106b6d.chunk.js.LICENSE": "/uno-phone/static/js/2.99106b6d.chunk.js.LICENSE",
     "static/media/public_card0.svg": "/uno-phone/static/media/public_card0.cc7eaaee.svg",
     "static/media/public_cardBlock.svg": "/uno-phone/static/media/public_cardBlock.5178e58a.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.35dec3bd.js",
     "static/js/2.99106b6d.chunk.js",
-    "static/css/main.6d45cfda.chunk.css",
-    "static/js/main.bf694c00.chunk.js"
+    "static/css/main.27451259.chunk.css",
+    "static/js/main.3f47c95f.chunk.js"
   ]
 }
