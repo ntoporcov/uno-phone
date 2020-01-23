@@ -6,28 +6,33 @@ colors.forEach(function(color){
     //create 2x ever colored card/color combination
     for(let i=1;i<13;i++){
         let id;
+        let value;
         switch (i) {
             case 10:
                 id='Block';
+                value = '⦸';
                 break;
             case 11:
                 id='Reverse';
+                value='⟲';
                 break;
             case 12:
                 id='Wild2';
+                value='+2';
                 break;
             default:
                 id=i;
+                value=i;
         }
         deck.push(
             {
                 id:"card"+id.toString(),
-                value:id,
+                value:value,
                 color:color,
             },
             {
                 id:"card"+id.toString(),
-                value:id,
+                value:value,
                 color:color,
             })
     }
@@ -41,9 +46,10 @@ colors.forEach(function(color){
 
 extraCards.forEach(function(card){
     for(let i=0;i<4;i++){
+        const value = card==='cardChangeColor'?'':'+4';
         deck.push({
             id:card,
-            value:null,
+            value:value,
             color:null
         })
     }

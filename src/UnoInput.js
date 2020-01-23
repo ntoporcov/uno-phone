@@ -136,6 +136,8 @@ class UnoInput extends React.Component{
         function removeCard() {
             _this.setState({
                 hand:hand,
+                currentColor:card.color,
+                currentId:card.id,
                 currentCard:card,
                 errorMessage:null
             },() => delayAddCard())
@@ -155,7 +157,13 @@ class UnoInput extends React.Component{
                     return false;
                 }
             }
-            _this.setState({numbers:newNumbers,currentColor:color,currentCard:card,errorMessage:null},() => delayAddCard());
+            _this.setState({
+                numbers:newNumbers,
+                currentColor:color,
+                currentId:card.id,
+                currentCard:card,
+                errorMessage:null
+            },() => delayAddCard());
         }
 
         function endGame() {
@@ -218,6 +226,7 @@ class UnoInput extends React.Component{
         const hand = this.state.hand;
         const color = this.state.currentColor;
         const done = this.state.done;
+        const currentCard = this.state.currentCard;
         return (
             <div>
                 <h1>Enter Your Phone Number</h1>
@@ -228,10 +237,10 @@ class UnoInput extends React.Component{
                     </div>
                 </div>
                 <div className={"colors"}>
-                    <div className={color==='#FF5555'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#FF5555'}}/>
-                    <div className={color==='#00AA00'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#00AA00'}}/>
-                    <div className={color==='#5555FF'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#5555FF'}}/>
-                    <div className={color==='#FFAA00'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#FFAA00'}}/>
+                    <div className={color==='#FF5555'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#FF5555'}}>{color==='#FF5555'?currentCard.value:null}</div>
+                    <div className={color==='#00AA00'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#00AA00'}}>{color==='#00AA00'?currentCard.value:null}</div>
+                    <div className={color==='#5555FF'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#5555FF'}}>{color==='#5555FF'?currentCard.value:null}</div>
+                    <div className={color==='#FFAA00'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#FFAA00'}}>{color==='#FFAA00'?currentCard.value:null}</div>
                 </div>
                 <div style={{display:done?"none":"block"}}>
                     <div style={{fontSize:18,marginBottom:10}}>

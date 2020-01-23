@@ -167,6 +167,8 @@ button:focus{
 .colors{
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
 .colorBox{
@@ -177,11 +179,16 @@ button:focus{
   margin: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,.3);
   border: 4px white solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
 }
 
 .colorBox.active{
   opacity: 1;
 }
+
 
 .instructionCol{
   display: flex;
