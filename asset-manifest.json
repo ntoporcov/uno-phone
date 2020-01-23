@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/uno-phone/static/css/main.ec57dfac.chunk.css",
-    "main.js": "/uno-phone/static/js/main.02f82fde.chunk.js",
-    "main.js.map": "/uno-phone/static/js/main.02f82fde.chunk.js.map",
-    "runtime-main.js": "/uno-phone/static/js/runtime-main.35dec3bd.js",
-    "runtime-main.js.map": "/uno-phone/static/js/runtime-main.35dec3bd.js.map",
-    "static/js/2.472789d1.chunk.js": "/uno-phone/static/js/2.472789d1.chunk.js",
-    "static/js/2.472789d1.chunk.js.map": "/uno-phone/static/js/2.472789d1.chunk.js.map",
+    "main.css": "/uno-phone/static/css/main.6d45cfda.chunk.css",
+    "main.js": "/uno-phone/static/js/main.a23e6065.chunk.js",
+    "main.js.map": "/uno-phone/static/js/main.a23e6065.chunk.js.map",
+    "runtime-main.js": "/uno-phone/static/js/runtime-main.82bad092.js",
+    "runtime-main.js.map": "/uno-phone/static/js/runtime-main.82bad092.js.map",
+    "static/js/2.4d4bc1ef.chunk.js": "/uno-phone/static/js/2.4d4bc1ef.chunk.js",
+    "static/js/2.4d4bc1ef.chunk.js.map": "/uno-phone/static/js/2.4d4bc1ef.chunk.js.map",
     "index.html": "/uno-phone/index.html",
-    "precache-manifest.980d976fdccab045171019981c4563eb.js": "/uno-phone/precache-manifest.980d976fdccab045171019981c4563eb.js",
+    "precache-manifest.60fb06928b6f98b104ffd7f4f87c687e.js": "/uno-phone/precache-manifest.60fb06928b6f98b104ffd7f4f87c687e.js",
     "service-worker.js": "/uno-phone/service-worker.js",
-    "static/css/main.ec57dfac.chunk.css.map": "/uno-phone/static/css/main.ec57dfac.chunk.css.map",
-    "static/js/2.472789d1.chunk.js.LICENSE": "/uno-phone/static/js/2.472789d1.chunk.js.LICENSE"
+    "static/css/main.6d45cfda.chunk.css.map": "/uno-phone/static/css/main.6d45cfda.chunk.css.map",
+    "static/js/2.4d4bc1ef.chunk.js.LICENSE": "/uno-phone/static/js/2.4d4bc1ef.chunk.js.LICENSE",
+    "static/media/public_card0.svg": "/uno-phone/static/media/public_card0.cc7eaaee.svg",
+    "static/media/public_cardBlock.svg": "/uno-phone/static/media/public_cardBlock.5178e58a.svg",
+    "static/media/public_cardChangeColor.svg": "/uno-phone/static/media/public_cardChangeColor.eba240a2.svg",
+    "static/media/public_cardReverse.svg": "/uno-phone/static/media/public_cardReverse.84f16df6.svg",
+    "static/media/public_cardWild2.svg": "/uno-phone/static/media/public_cardWild2.e3594d53.svg",
+    "static/media/public_cardWild4.svg": "/uno-phone/static/media/public_cardWild4.09fb993c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.35dec3bd.js",
-    "static/js/2.472789d1.chunk.js",
-    "static/css/main.ec57dfac.chunk.css",
-    "static/js/main.02f82fde.chunk.js"
+    "static/js/runtime-main.82bad092.js",
+    "static/js/2.4d4bc1ef.chunk.js",
+    "static/css/main.6d45cfda.chunk.css",
+    "static/js/main.a23e6065.chunk.js"
   ]
 }
