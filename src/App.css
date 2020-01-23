@@ -1,13 +1,17 @@
+html{
+  background-color: #004d61;
+}
+
 .App {
   text-align: center;
-  background-color: #008aac;
+  background-color: #004d61;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: 100px ;
+  align-items: center;
 }
 
 h1{
@@ -17,12 +21,6 @@ h1{
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-link {
@@ -42,6 +40,7 @@ h1{
   margin-top: 80px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -59,7 +58,7 @@ h1{
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,.2);
-  border: none;
+  border: 2px solid white;
   outline: none;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -67,6 +66,12 @@ h1{
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently*/
+}
+
+
+.oneNumberInput.focus{
+  box-shadow: 0 0 13px rgb(0, 255, 199);
+  border: 2px solid rgb(0, 255, 194);
 }
 
 .oneNumberInput.past,.oneNumberInput.focus{
@@ -77,21 +82,152 @@ h1{
   margin-left: 50px;
 }
 
-.oneNumberInput.focus{
-  box-shadow: 0 0 10px rgb(0, 255, 194);
+@media (max-width: 992px) {
+  .inputRow{
+    max-width: 500px;
+    justify-content: center;
+  }
+
+  .oneNumberInput:nth-child(3),
+  .oneNumberInput:nth-child(6){
+    margin-right: 115px;
+  }
 }
 
 .cardsRow{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  margin: 50px 0;
 }
 
 .card{
   width: 200px;
   height: 320px;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 15px;
   background: white;
-  margin: 0 20px;
+  margin: 20px;
+  transition: all ease-out .15s;
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+  cursor: pointer;
+  flex-grow:0;
+  position: relative;
+  animation: slideLeft .4s;
+  animation-iteration-count: 1;
+}
+
+
+@media (max-width: 768px) {
+  .card{
+    width: 94px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+  }
+}
+
+button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border-width: 2px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+button:hover{
+  background-color: #0e487f;
+  color: white;
+}
+
+button:focus{
+  outline: none;
+}
+
+@-webkit-keyframes slideLeft {
+  from {left: 100vw}
+  to {left: 0}
+}
+
+/* Standard syntax */
+@keyframes slideLeft {
+  from {left: 100vw}
+  to {left: 0}
+}
+
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 20px 25px rgba(0,0,0,.3);
+}
+
+.colors{
+  display: flex;
+  justify-content: center;
+}
+
+.colorBox{
+  opacity: .2;
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+  border: 4px white solid;
+}
+
+.colorBox.active{
+  opacity: 1;
+}
+
+.instructionCol{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+
+.instructionBox{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 25%;
+  margin: 20px;
+  text-align: left;
+  color:black;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,.3);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .instructionBox{
+    width: 75%;
+    flex-direction: column;
+    margin: 8px;
+  }
+}
+
+.instructionBox h3{
+  font-size: 28px;
+  color: #0e487f;
+  margin-bottom: 0;
+}
+
+.instructionBox p{
+  font-size: 20px;
+}
+
+.instructionBox img{
+  padding: 10px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: white;
+  box-shadow: 0 0 4px rgba(0,0,0,.2);
 }
