@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/uno-phone/static/css/main.6d45cfda.chunk.css",
-    "main.js": "/uno-phone/static/js/main.6bd62d2c.chunk.js",
-    "main.js.map": "/uno-phone/static/js/main.6bd62d2c.chunk.js.map",
+    "main.js": "/uno-phone/static/js/main.c67de291.chunk.js",
+    "main.js.map": "/uno-phone/static/js/main.c67de291.chunk.js.map",
     "runtime-main.js": "/uno-phone/static/js/runtime-main.35dec3bd.js",
     "runtime-main.js.map": "/uno-phone/static/js/runtime-main.35dec3bd.js.map",
     "static/js/2.80a03a17.chunk.js": "/uno-phone/static/js/2.80a03a17.chunk.js",
     "static/js/2.80a03a17.chunk.js.map": "/uno-phone/static/js/2.80a03a17.chunk.js.map",
     "index.html": "/uno-phone/index.html",
-    "precache-manifest.a12ada53c790e9406cbe1fcc825ca245.js": "/uno-phone/precache-manifest.a12ada53c790e9406cbe1fcc825ca245.js",
+    "precache-manifest.ce43523344b7f5b93507db5ab10b9353.js": "/uno-phone/precache-manifest.ce43523344b7f5b93507db5ab10b9353.js",
     "service-worker.js": "/uno-phone/service-worker.js",
     "static/css/main.6d45cfda.chunk.css.map": "/uno-phone/static/css/main.6d45cfda.chunk.css.map",
     "static/js/2.80a03a17.chunk.js.LICENSE": "/uno-phone/static/js/2.80a03a17.chunk.js.LICENSE",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.35dec3bd.js",
     "static/js/2.80a03a17.chunk.js",
     "static/css/main.6d45cfda.chunk.css",
-    "static/js/main.6bd62d2c.chunk.js"
+    "static/js/main.c67de291.chunk.js"
   ]
 }
