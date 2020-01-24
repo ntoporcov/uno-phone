@@ -111,8 +111,10 @@ class UnoInput extends React.Component{
 
 
         function delayAddCard(){
-            hand.push(cardTurn);
-            _this.setState({hand:hand,errorMessage:null});
+            if(deck.length>0){
+                hand.push(cardTurn);
+                _this.setState({hand:hand,errorMessage:null});
+            }
         }
 
         function changeDigit(changeTo){
