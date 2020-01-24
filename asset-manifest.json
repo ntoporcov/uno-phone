@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/uno-phone/static/css/main.27451259.chunk.css",
-    "main.js": "/uno-phone/static/js/main.bde41135.chunk.js",
-    "main.js.map": "/uno-phone/static/js/main.bde41135.chunk.js.map",
-    "runtime-main.js": "/uno-phone/static/js/runtime-main.82bad092.js",
-    "runtime-main.js.map": "/uno-phone/static/js/runtime-main.82bad092.js.map",
-    "static/js/2.dd60cd54.chunk.js": "/uno-phone/static/js/2.dd60cd54.chunk.js",
-    "static/js/2.dd60cd54.chunk.js.map": "/uno-phone/static/js/2.dd60cd54.chunk.js.map",
+    "main.js": "/uno-phone/static/js/main.0a175b90.chunk.js",
+    "main.js.map": "/uno-phone/static/js/main.0a175b90.chunk.js.map",
+    "runtime-main.js": "/uno-phone/static/js/runtime-main.35dec3bd.js",
+    "runtime-main.js.map": "/uno-phone/static/js/runtime-main.35dec3bd.js.map",
+    "static/js/2.1fb58cbf.chunk.js": "/uno-phone/static/js/2.1fb58cbf.chunk.js",
+    "static/js/2.1fb58cbf.chunk.js.map": "/uno-phone/static/js/2.1fb58cbf.chunk.js.map",
     "index.html": "/uno-phone/index.html",
-    "precache-manifest.4d99b00842ff0ad0ff4dfb0fd4869a74.js": "/uno-phone/precache-manifest.4d99b00842ff0ad0ff4dfb0fd4869a74.js",
+    "precache-manifest.e597335b175b1d313ae1f66838f1c67d.js": "/uno-phone/precache-manifest.e597335b175b1d313ae1f66838f1c67d.js",
     "service-worker.js": "/uno-phone/service-worker.js",
     "static/css/main.27451259.chunk.css.map": "/uno-phone/static/css/main.27451259.chunk.css.map",
-    "static/js/2.dd60cd54.chunk.js.LICENSE": "/uno-phone/static/js/2.dd60cd54.chunk.js.LICENSE",
+    "static/js/2.1fb58cbf.chunk.js.LICENSE": "/uno-phone/static/js/2.1fb58cbf.chunk.js.LICENSE",
     "static/media/public_card0.svg": "/uno-phone/static/media/public_card0.cc7eaaee.svg",
     "static/media/public_cardBlock.svg": "/uno-phone/static/media/public_cardBlock.5178e58a.svg",
     "static/media/public_cardChangeColor.svg": "/uno-phone/static/media/public_cardChangeColor.eba240a2.svg",
@@ -20,9 +20,9 @@
     "static/media/public_cardWild4.svg": "/uno-phone/static/media/public_cardWild4.09fb993c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.82bad092.js",
-    "static/js/2.dd60cd54.chunk.js",
+    "static/js/runtime-main.35dec3bd.js",
+    "static/js/2.1fb58cbf.chunk.js",
     "static/css/main.27451259.chunk.css",
-    "static/js/main.bde41135.chunk.js"
+    "static/js/main.0a175b90.chunk.js"
   ]
 }
