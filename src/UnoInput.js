@@ -59,7 +59,8 @@ class UnoInput extends React.Component{
             handAmount:0,
             hand:[],
             errorMessage:null,
-            done:false
+            done:false,
+            failed:false
         }
     }
 
@@ -215,10 +216,24 @@ class UnoInput extends React.Component{
     };
 
     resetHand = () =>{
+        const _this = this;
+        const deck = this.state.deck;
+        function callback() {
+            if(deck.length===0){
+                _this.setState({failed:true,currentColor:null})
+            }else{
+                if(deck.length > 5 ){
+                    _this.drawCard(5)
+                }else{
+                    _this.drawCard(deck.length);
+                }
+            }
+        }
+
         this.setState({
             hand:[],
             errorMessage:null
-        },()=>this.drawCard(5))
+        },()=>callback())
     };
 
     render() {
@@ -226,6 +241,7 @@ class UnoInput extends React.Component{
         const hand = this.state.hand;
         const color = this.state.currentColor;
         const done = this.state.done;
+        const fail = this.state.failed;
         const currentCard = this.state.currentCard;
         return (
             <div>
@@ -242,7 +258,7 @@ class UnoInput extends React.Component{
                     <div className={color==='#5555FF'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#5555FF'}}>{color==='#5555FF'?currentCard.value:null}</div>
                     <div className={color==='#FFAA00'||color===null?"colorBox active":"colorBox"} style={{backgroundColor:'#FFAA00'}}>{color==='#FFAA00'?currentCard.value:null}</div>
                 </div>
-                <div style={{display:done?"none":"block"}}>
+                <div style={{display:done || fail?"none":"block"}}>
                     <div style={{fontSize:18,marginBottom:10}}>
                         <span>{this.state.errorMessage}</span>
                     </div>
@@ -287,6 +303,12 @@ class UnoInput extends React.Component{
                     <p style={{marginBottom:0}}>Is this really your phone number?</p>
                     <h2 style={{marginTop:10}}>I don't fucking care!</h2>
                     <h3>But you did it! You played along and you deserve some confetti.</h3>
+                </div>
+                <div style={{display:fail?"block":"none"}}>
+                    {done?<Confetti width={window.innerWidth} height={window.innerHeight}/>:null}
+                    <h1>You failed.</h1>
+                    <p style={{marginBottom:0}}>I gave you everything you needed.</p>
+                    <h2 style={{marginTop:10}}>And you failed.</h2>
                 </div>
             </div>
         )
